@@ -23,7 +23,7 @@ a {
 
 .section-01 .inner{
     max-width: 1440px;
-    width: calc( 100%- 60px);
+    width: calc( 100% - 60px);
     margin: 0 auto;
 }
 .section-01 .inner .item_wrap {
