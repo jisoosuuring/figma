@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.section-01 {
+    background-color: #eee;
+    padding: 160px 0;
+}
+
+.section-01 .inner{
+    max-width: 1440px;
+    width: calc( 100% - 60px);
+    margin: 0 auto;
+}
+.section-01 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-01 .inner .item_wrap > div {
+    width: 48.75%;
+    height: 546px;
+}
+.section-01 .inner .item_wrap .item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    /* justify-content: spacebetween도 가능 */
+}
+
+.section-01 .inner .item_wrap .item-right .item {
+    height: 255px;
+}
+
+.section-01 .inner .item_wrap .item-right .item .text {
+top: 40px;
+left: 40px;
+}
+
+.section-01 .inner .item_wrap .item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.section-01 .inner .item_wrap .item .image{
+    height: 100%;
+}
+
+ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-01 .inner .item_wrap .item .text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+.section-01 .inner .item_wrap .item .text strong {
+    font-size: 32px;
+    
+}
+
+.section-01 .inner .item_wrap .item .text p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px) {
+    .section-01 .inner .item_wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-01 .inner .item_wrap > div {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-01 .inner .item_wrap .item_left {
+       /*  height: 551px; */
+        height: 77.82vw;
+    }
+
+    .section-01 .inner .item_wrap .item_right {
+        gap: 30px;
+    }
+
+    .section-01 .inner .item_wrap .item_right .item {
+        height: 262px;
+    }
+
+    .section-02 .inner {
+        padding: 80px 20px;
+    }
+
+
+    .section-02 .inner .item_wrap {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .section-02 .inner .item_wrap .item {
+        width: 49%;
+
+    }
+
+
+}
+
+.section-02 {
+    margin-top: 160px;
+}
+
+.section-02 .inner {
+    background-size: cover;
+    /* 화면 크기에 맞춰 이미지 크기를 조절 */
+}
+
+.section-02 .inner .image {
+    width: 588px;
+    height: 588px;
+}
+
+.section-02 .inner .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.section-02 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 512px;
+}
+
+.section-02 .inner .item_wrap .item {
+    width: 333px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.section-02 .inner .title {
+    margin-bottom: 50px;
+}
+
+.section-02 .inner .title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-02 .inner .title span {
+    font-size: 22px;
+    color: #333;
+}
+
+.section-02 .inner .item_wrap .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section-02 .inner .item_wrap .item .text p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.section-02 .inner .item_wrap .item .text div {
+    margin-top: 10px;
+}
+
+
+.section-02 .inner .item_wrap .item .price-text strong {
+    margin-top: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.section-02 .inner .item_wrap .item .price-text b {
+    font-size: 25px;
+    color: #FF4A4A;
+}
+
+
+.section-03 .category {
+    padding: 160px 0;
+}
+
+.section-03 .category ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.section-03 .category ul li {
+    border-radius: 50%;
+    gap: 60px;
+}
+
+.section-03 .category ul li img {
+    width: 168px;
+    height: 168px;
+    /* 높이는 이미지한테만 줘야함 */
+    border-radius: 50%;
+}
+
+.section-03 .category ul li p {
+    text-align: center;
+}
+
+
+
+
