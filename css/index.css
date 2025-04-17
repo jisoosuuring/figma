@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-01 {
+
+}
+
+.inner {
+    max-width: 1920px;
+    width: 100%;
+    padding: 160px 240px;
+}
+
+.section-01 .inner .title {
+    margin-bottom: 50px;
+}
+
+.section-01 .inner .title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-01 .inner .title span {
+    font-size: 22px;
+    color: #333;
+}
+
+.section-01 .inner .item_wrap {
+    display: flex;
+    gap: 36px;
+}
+
+/* 왼쪽 큰 이미지 */
+.section-01 .inner .item {
+    flex: 2;
+}
+
+.section-01 .inner .item .image {
+    position: relative;
+    width: 702px;
+    height: 546px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 오른쪽 작은 이미지 2개 */
+.section-01 .inner .item-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.section-01 .inner .item-right .image {
+    position: relative;
+    width: 702px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section-01 .inner .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 이미지 안의 텍스트 */
+.section-01 .inner .text {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+}
+
+.section-01 .inner .text p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-01 .inner .text span {
+    font-size: 18px;
+}
+
+
+.section-02 {
+    margin-top: 160px;
+}
+
+.section-02 .inner {
+    background-size: cover;
+    /* 화면 크기에 맞춰 이미지 크기를 조절 */
+}
+
+.section-02 .inner .image {
+    width: 588px;
+    height: 588px;
+}
+
+.section-02 .inner .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.section-02 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 512px;
+}
+
+.section-02 .inner .item_wrap .item {
+    width: 333px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.section-02 .inner .title {
+    margin-bottom: 50px;
+}
+
+.section-02 .inner .title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-02 .inner .title span {
+    font-size: 22px;
+    color: #333;
+}
+
+.section-02 .inner .item_wrap .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section-02 .inner .item_wrap .item .text p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.section-02 .inner .item_wrap .item .text div {
+    margin-top: 10px;
+}
+
+
+.section-02 .inner .item_wrap .item .price-text strong {
+    margin-top: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.section-02 .inner .item_wrap .item .price-text b {
+    font-size: 25px;
+    color: #FF4A4A;
+}
+
+
+.section-03 .category {
+    padding: 160px 0;
+}
+
+.section-03 .category ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.section-03 .category ul li {
+    border-radius: 50%;
+    gap: 60px;
+}
+
+.section-03 .category ul li img {
+    width: 168px;
+    height: 168px;
+    /* 높이는 이미지한테만 줘야함 */
+    border-radius: 50%;
+}
+
+.section-03 .category ul li p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .section-02 .inner {
+        padding: 80px 20px;
+    }
+
+
+    .section-02 .inner .item_wrap {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .section-02 .inner .item_wrap .item {
+        width: 49%;
+
+    }
+
+
+   
+}
